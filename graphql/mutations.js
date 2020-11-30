@@ -10,6 +10,7 @@ export const createUser = /* GraphQL */ `
       id
       username
       email
+      imageUri
       posts {
         nextToken
       }
@@ -27,6 +28,7 @@ export const updateUser = /* GraphQL */ `
       id
       username
       email
+      imageUri
       posts {
         nextToken
       }
@@ -44,6 +46,7 @@ export const deleteUser = /* GraphQL */ `
       id
       username
       email
+      imageUri
       posts {
         nextToken
       }
@@ -66,6 +69,7 @@ export const createPost = /* GraphQL */ `
         id
         username
         email
+        imageUri
         createdAt
         updatedAt
       }
@@ -96,6 +100,7 @@ export const updatePost = /* GraphQL */ `
         id
         username
         email
+        imageUri
         createdAt
         updatedAt
       }
@@ -126,6 +131,7 @@ export const deletePost = /* GraphQL */ `
         id
         username
         email
+        imageUri
         createdAt
         updatedAt
       }
