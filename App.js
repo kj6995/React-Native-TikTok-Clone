@@ -10,6 +10,8 @@ import React from 'react';
 import {SafeAreaView, StyleSheet, StatusBar} from 'react-native';
 import Navigation from './src/navigation';
 
+import {withAuthenticator} from 'aws-amplify-react-native';
+
 const App: () => React$Node = () => {
   return (
     <>
@@ -23,4 +25,4 @@ const App: () => React$Node = () => {
 
 const styles = StyleSheet.create({});
 
-export default App;
+export default withAuthenticator(App);
