@@ -2,6 +2,7 @@ import React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {Image, Text} from 'react-native';
 import Home from '../screens/Home';
+import Camera from '../screens/Camera';
 
 import Entypo from 'react-native-vector-icons/Entypo';
 import AntDesign from 'react-native-vector-icons/AntDesign';
@@ -40,7 +41,7 @@ const HomeBottomTabNavigator = () => {
       />
       <Tab.Screen
         name="Upload"
-        component={() => <Text>Upload</Text>}
+        component={Camera}
         options={{
           tabBarIcon: ({}) => (
             <Image
